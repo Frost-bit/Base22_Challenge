@@ -1,9 +1,9 @@
 # Base22_Challenge
 Backend challenge provided by Base22
 
-##Dependencies
+## Dependencies
 * JCommander (for parsing arguments)
 * JSoup (for web scraping)
 
-##Usage
+## Usage
 java Base22Challenge -inputFileName urls.txt -outputFileName scrapped.csv -cleanHTML
