@@ -5,8 +5,11 @@ Backend challenge provided by Base22
 * JCommander (for parsing arguments)
 * JSoup (for web scraping)
 
+## Compile jar with dependencies
+mvn clean compile assembly:single
+
 ## Usage
-java Base22Challenge -inputFileName urls.txt -outputFileName scrapped.csv -cleanHTML
+java -cp target/backend-challenge-base22-1.0-jar-with-dependencies.jar com.base22.challenge.Base22Challenge -inputFileName ../base22/urls.txt -outputFileName ../base22/scrapped2.csv -cleanHTML
 
 ## Reading the CSV
 Open any editor for csv and select as delimiter "  " (double space, I chose this so that the body of the HTML will appear in one column withput any problem).
